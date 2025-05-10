@@ -89,6 +89,19 @@ public class Controlador {
         }
     }
     
+    public Resultado ordenarYMedir(int idAlgoritmo, String caso) {
+        EstrategiaOrdenamiento<Politico, ?> algoritmo = algoritmos.get(idAlgoritmo);
+        algoritmo.resetIteraciones(); // <- limpia antes de usar
+
+        long inicio = System.currentTimeMillis();
+        ordenarLista(idAlgoritmo);
+        long tiempo = System.currentTimeMillis() - inicio;
+
+        int iteraciones = algoritmo.getIteraciones();
+
+        return new Resultado(tiempo, iteraciones, caso);
+    }
+    
     /**
      * Inserta un político al inicio de la lista actual.
      */
@@ -140,6 +153,13 @@ public class Controlador {
         verificarListaCreada();
         listaActual.imprimir();
     }
+    
+    public void insertarPoliticos(List<Politico> politicos) {
+        verificarListaCreada();
+        for (Politico p : politicos) {
+            listaActual.insertarAlFinal(p);
+        }
+    }    
     
     /**
      * Obtiene todos los políticos de la lista actual como una lista.

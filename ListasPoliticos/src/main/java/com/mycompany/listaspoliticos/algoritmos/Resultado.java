@@ -11,12 +11,18 @@ package com.mycompany.listaspoliticos.algoritmos;
 public class Resultado {
     private long tiempo;
     private int iteraciones;
+    private String caso;
 
-    public Resultado(long tiempo, int iteraciones) {
+    public Resultado(long tiempo, int iteraciones, String caso) {
         this.tiempo = tiempo;
         this.iteraciones = iteraciones;
+        this.caso = caso;
     }
 
+    public String getCaso() {
+        return caso;
+    }
+    
     public long getTiempo() {
         return tiempo;
     }
