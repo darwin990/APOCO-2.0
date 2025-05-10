@@ -1,8 +1,17 @@
-C:\Users\57320\Downloads\ListasPoliticos\src\main\java\com\mycompany\listaspoliticos\controlador\Controlador.java
-C:\Users\57320\Downloads\ListasPoliticos\src\main\java\com\mycompany\listaspoliticos\algoritmos\BubbleSort.java
-C:\Users\57320\Downloads\ListasPoliticos\src\main\java\com\mycompany\listaspoliticos\listas\ListaEnlazada.java
-C:\Users\57320\Downloads\ListasPoliticos\src\main\java\com\mycompany\listaspoliticos\listas\Nodo.java
-C:\Users\57320\Downloads\ListasPoliticos\src\main\java\com\mycompany\listaspoliticos\vista\Vista.java
-C:\Users\57320\Downloads\ListasPoliticos\src\main\java\com\mycompany\listaspoliticos\algoritmos\InserctionSort.java
-C:\Users\57320\Downloads\ListasPoliticos\src\main\java\com\mycompany\listaspoliticos\main\Main.java
-C:\Users\57320\Downloads\ListasPoliticos\src\main\java\com\mycompany\listaspoliticos\modelo\Politico.java
+C:\Users\moral\OneDrive\Documentos\Proyectos Visual studio\APOCO 2.0\APOCO-2.0\ListasPoliticos\src\main\java\com\mycompany\listaspoliticos\algoritmos\Resultado.java
+C:\Users\moral\OneDrive\Documentos\Proyectos Visual studio\APOCO 2.0\APOCO-2.0\ListasPoliticos\src\main\java\com\mycompany\listaspoliticos\modelo\ListaEnlazadaSimpleCircular.java
+C:\Users\moral\OneDrive\Documentos\Proyectos Visual studio\APOCO 2.0\APOCO-2.0\ListasPoliticos\src\main\java\com\mycompany\listaspoliticos\modelo\NodoBase.java
+C:\Users\moral\OneDrive\Documentos\Proyectos Visual studio\APOCO 2.0\APOCO-2.0\ListasPoliticos\src\main\java\com\mycompany\listaspoliticos\algoritmos\OrdenamientoBurbuja.java
+C:\Users\moral\OneDrive\Documentos\Proyectos Visual studio\APOCO 2.0\APOCO-2.0\ListasPoliticos\src\main\java\com\mycompany\listaspoliticos\modelo\ListaEnlazadaSimple.java
+C:\Users\moral\OneDrive\Documentos\Proyectos Visual studio\APOCO 2.0\APOCO-2.0\ListasPoliticos\src\main\java\com\mycompany\listaspoliticos\controlador\Controlador.java
+C:\Users\moral\OneDrive\Documentos\Proyectos Visual studio\APOCO 2.0\APOCO-2.0\ListasPoliticos\src\main\java\com\mycompany\listaspoliticos\modelo\Politico.java
+C:\Users\moral\OneDrive\Documentos\Proyectos Visual studio\APOCO 2.0\APOCO-2.0\ListasPoliticos\src\main\java\com\mycompany\listaspoliticos\modelo\Nodo.java
+C:\Users\moral\OneDrive\Documentos\Proyectos Visual studio\APOCO 2.0\APOCO-2.0\ListasPoliticos\src\main\java\com\mycompany\listaspoliticos\algoritmos\OrdenamientoMerge.java
+C:\Users\moral\OneDrive\Documentos\Proyectos Visual studio\APOCO 2.0\APOCO-2.0\ListasPoliticos\src\main\java\com\mycompany\listaspoliticos\vista\VistaPoliticos.java
+C:\Users\moral\OneDrive\Documentos\Proyectos Visual studio\APOCO 2.0\APOCO-2.0\ListasPoliticos\src\main\java\com\mycompany\listaspoliticos\modelo\ListaEnlazadaDoble.java
+C:\Users\moral\OneDrive\Documentos\Proyectos Visual studio\APOCO 2.0\APOCO-2.0\ListasPoliticos\src\main\java\com\mycompany\listaspoliticos\algoritmos\OrdenamientoInsercion.java
+C:\Users\moral\OneDrive\Documentos\Proyectos Visual studio\APOCO 2.0\APOCO-2.0\ListasPoliticos\src\main\java\com\mycompany\listaspoliticos\algoritmos\EstrategiaOrdenamiento.java
+C:\Users\moral\OneDrive\Documentos\Proyectos Visual studio\APOCO 2.0\APOCO-2.0\ListasPoliticos\src\main\java\com\mycompany\listaspoliticos\main\Main.java
+C:\Users\moral\OneDrive\Documentos\Proyectos Visual studio\APOCO 2.0\APOCO-2.0\ListasPoliticos\src\main\java\com\mycompany\listaspoliticos\modelo\NodoDoble.java
+C:\Users\moral\OneDrive\Documentos\Proyectos Visual studio\APOCO 2.0\APOCO-2.0\ListasPoliticos\src\main\java\com\mycompany\listaspoliticos\algoritmos\OrdenamientoQuickSort.java
+C:\Users\moral\OneDrive\Documentos\Proyectos Visual studio\APOCO 2.0\APOCO-2.0\ListasPoliticos\src\main\java\com\mycompany\listaspoliticos\modelo\ListaEnlazadaBase.java
