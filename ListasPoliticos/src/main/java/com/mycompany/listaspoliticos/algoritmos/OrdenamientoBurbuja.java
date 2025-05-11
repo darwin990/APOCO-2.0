@@ -13,29 +13,45 @@ public class OrdenamientoBurbuja<T extends Comparable<T>, N extends NodoBase<T, 
     public void ordenar(ListaEnlazadaBase<T, N> lista) {
         Objects.requireNonNull(lista);
         iteraciones = 0;
+        int tamanno = lista.getTamanno();
 
-        if (lista.getTamanno() <= 1) return;
+        if (tamanno <= 1) return;
 
         boolean intercambiado;
-        N cabeza = lista.getCabeza();
 
         do {
-            N actual = cabeza;
             intercambiado = false;
+            N actual = lista.getCabeza();
 
-            while (actual != null && actual.getSiguiente() != null) {
+            for (int i = 0; i < tamanno - 1; i++) {
                 iteraciones++;
-                if (actual.getDato().compareTo(actual.getSiguiente().getDato()) > 0) {
-                    T temp = actual.getDato();
-                    actual.setDato(actual.getSiguiente().getDato());
-                    actual.getSiguiente().setDato(temp);
-                    intercambiado = true;
-                }
-                actual = actual.getSiguiente();
-            }
-        } while (intercambiado);
+                N siguiente = actual.getSiguiente();
 
-        lista.setCabeza(cabeza);
+                // Solo comparar si no hemos llegado al final de esta pasada
+                if (i < tamanno - 1) {
+                    if (actual.getDato().compareTo(siguiente.getDato()) > 0) {
+                        swapDatos(actual, siguiente);
+                        intercambiado = true;
+                    }
+                }
+
+                actual = siguiente;
+            }
+
+            // Después de cada pasada completa, el último elemento está en su lugar
+            tamanno--;
+        } while (intercambiado && tamanno > 1);
+    }
+
+    private void swapDatos(N nodo1, N nodo2) {
+        try {
+            T temp = nodo1.getDato();
+            nodo1.setDato(nodo2.getDato());
+            nodo2.setDato(temp);
+        } catch (Exception e) {
+            throw new UnsupportedOperationException(
+                "El ordenamiento Burbuja requiere nodos con datos modificables", e);
+        }
     }
 
     @Override
