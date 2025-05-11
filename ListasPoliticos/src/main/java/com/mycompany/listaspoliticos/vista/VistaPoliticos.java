@@ -106,6 +106,7 @@ public class VistaPoliticos extends JFrame {
     private void generarYOrdenar() {
         try {
         	modeloTabla.setRowCount(0);
+        	txtConsola.setText("");
         	
             // Entradas
             tamanoActual = Integer.parseInt(txtTamanoInicial.getText());
@@ -137,7 +138,13 @@ public class VistaPoliticos extends JFrame {
             Resultado r3 = controlador.ordenarYMedir(algoritmo, "Orden inverso");
             modeloTabla.addRow(new Object[]{cbAlgoritmo.getSelectedItem(), "Orden inverso", r3.getTiempo(), r3.getIteraciones()});
 
-            txtConsola.append("✅ Pruebas completadas para: " + cbAlgoritmo.getSelectedItem() + "\n");
+            txtConsola.append("Pruebas completadas para: " + cbAlgoritmo.getSelectedItem() + "\n");
+            
+            txtConsola.append("Lista ordenada:\n");
+            List<Politico> politicosOrdenados = controlador.obtenerPoliticos();
+            for (Politico p : politicosOrdenados) {
+                txtConsola.append(p.toString() + "\n");
+            }
 
         } catch (Exception ex) {
             mostrarError(ex.getMessage());
